@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Basic -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<!-- Site Metas -->
+	<link rel="icon" href="images/favicon.png" type="image/gif" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+
+	<title>Coral ML</title>
+
+	<!-- bootstrap core css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+	<!-- fonts style -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+	<!-- font awesome style -->
+	<link href="css/font-awesome.min.css" rel="stylesheet" />
+	<!-- Custom styles for this template -->
+	<link href="css/style.css" rel="stylesheet" />
+	<!-- responsive style -->
+	<link href="css/responsive.css" rel="stylesheet" />
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	<style>
+		#map {
+			width: 100%;
+		}
+
+		.legend {
+			background: white;
+			padding: 10px;
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+		}
+
+		.legend i {
+			width: 20px;
+			height: 20px;
+			margin-right: 5px;
+			display: inline-block;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="hero_area">
+		<!-- header section strats -->
+		<header class="header_section long_section px-0">
+			<nav class="navbar navbar-expand-lg custom_nav-container ">
+				<a class="navbar-brand" href="index.html">
+					<span>
+						CORAL ML
+					</span>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class=""> </span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+						<ul class="navbar-nav  ">
+							<li class="nav-item active">
+								<a class="nav-link" href="index.html">Beranda</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#pakar">Sistem Pakar</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#klasifikasi">Klasifikasi Bleaching</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#tentang_kami">Tentang Kami</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- end header section -->
+
+		<!-- slider section -->
+		<section class="slider_section long_section">
+			<div id="customCarousel" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="container ">
+							<div class="row">
+								<div class="col-md-5">
+									<div class="detail-box">
+										<h1>
+											Sistem Pakar
+										</h1>
+										<p>
+											Sistem Pakar Coral merupakan implementasi teknologi kecerdasan buatan, dalam
+											pemantauan dan
+											analisis kesehatan terumbu karang.
+										</p>
+										<div class="btn-box">
+											<a href="#pakar" class="btn2" style="width: 80%;">
+												Pelajari Lebih Lanjut
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-7">
+									<div class="img-box">
+										<img src="images/slider1.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="container ">
+							<div class="row">
+								<div class="col-md-5">
+									<div class="detail-box">
+										<h1>
+											Sistem Klasifikasi Bleaching Coral
+										</h1>
+										<p>
+											Sistem Klasifikasi Bleaching Coral merupakan inovasi berbasis kecerdasan
+											buatan untuk
+											mengklasifikasikan kondisi
+											pemutihan pada terumbu karang.
+										</p>
+										<div class="btn-box">
+											<a href="#klasifikasi" class="btn2" style="width: 80%;">
+												Pelajari Lebih Lanjut
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-7">
+									<div class="img-box">
+										<img src="images/slider2.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<ol class="carousel-indicators">
+					<li data-target="#customCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#customCarousel" data-slide-to="1"></li>
+				</ol>
+			</div>
+		</section>
+		<!-- end slider section -->
+	</div>
+
+	<!-- about section -->
+	<section class="about_section layout_padding long_section" id="pakar">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="img-box">
+						<img src="images/slider3.png" alt="">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="detail-box">
+						<div class="heading_container">
+							<h2>
+								Sistem Pakar
+							</h2>
+						</div>
+						<p>
+							Sistem Pakar Coral merupakan implementasi teknologi kecerdasan buatan, khususnya Machine
+							Learning,
+							dalam pemantauan dan analisis kesehatan terumbu karang.<br /><br />Sistem ini memanfaatkan
+							algoritma
+							pembelajaran
+							mesin untuk menganalisis data lingkungan laut dan gambar-gambar terumbu karang guna
+							memberikan prediksi
+							dan rekomendasi terkait kondisi kesehatan terumbu karang secara cepat dan
+							akurat.<br /><br />Dengan
+							memadukan
+							keahlian pakar domain dan kemampuan prediktif, sistem ini dapat menjadi alat yang efektif
+							dalam menjaga
+							dan melestarikan ekosistem terumbu karang.
+						</p>
+						<a href="pakar.html">
+							Coba Sekarang
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end about section -->
+
+	<!-- about section -->
+	<section class="about_section layout_padding long_section" id="klasifikasi">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="detail-box">
+						<div class="heading_container">
+							<h2>
+								Sistem Klasifikasi<br />Bleaching Coral
+							</h2>
+						</div>
+						<p>
+							Sistem Klasifikasi Bleaching Coral merupakan inovasi berbasis kecerdasan buatan yang
+							memanfaatkan
+							teknologi Machine Learning untuk mengidentifikasi dan mengklasifikasikan kondisi pemutihan
+							(bleaching) pada terumbu karang.<br /><br />Dengan memproses sejumlah besar data citra
+							terumbu karang,
+							sistem
+							ini
+							dapat secara otomatis menganalisis dan mengkategorikan tingkat keparahan bleaching,
+							memberikan informasi
+							yang berharga untuk pemantauan dan langkah-langkah konservasi terumbu karang di seluruh
+							dunia.
+						</p>
+						<a href="klasifikasi.html">
+							Coba Sekarang
+						</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="img-box">
+						<img src="images/slider4.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end about section -->
+
+	<section class="blog_section layout_padding" id="tentang_kami">
+		<div class="container">
+			<div class="heading_container">
+				<h2>
+					Tentang Kami
+				</h2>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-lg-4">
+					<div class="box">
+						<div class="img-box">
+							<img src="images/b1.jpg" alt="">
+						</div>
+						<div class="detail-box">
+							<h5>
+								John Doe
+							</h5>
+							<p>
+								Alteration in some form, by injected humour, or randomised words which don't look even
+								slightly
+								believable.
+							</p>
+							<a href="" class="w-100 text-center">
+								See More
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="box">
+						<div class="img-box">
+							<img src="images/b2.jpg" alt="">
+						</div>
+						<div class="detail-box">
+							<h5>
+								Jane Doe
+							</h5>
+							<p>
+								Alteration in some form, by injected humour, or randomised words which don't look even
+								slightly
+								believable.
+							</p>
+							<a href="" class="w-100 text-center">
+								See More
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="col-md-6 col-lg-4 mx-auto">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/b3.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Molestias magni natus dolores odio commodi. Quaerat!
+              </h5>
+              <p>
+                alteration in some form, by injected humour, or randomised words which don't look even slightly
+                believable.
+              </p>
+              <a href="">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div> -->
+			</div>
+		</div>
+	</section>
+
+	<!-- contact section -->
+	<section class="contact_section  long_section">
+		<div class="container">
+			<center>
+				<h2 class="mb-5" style="text-transform: uppercase; font-weight: bold;">
+					Peta Persebaran Coral di Indonesia
+				</h2>
+			</center>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="map_container">
+						<div class="map">
+							<div id="map" style="height: 400px;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end contact section -->
+
+	<!-- info section -->
+	<section class="info_section long_section" style="margin-left: 0; margin-right: 0;">
+
+		<div class="container">
+			<div class="contact_nav">
+				<a href="">
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					<span class="mt-2">
+						0822 1234 5678
+					</span>
+				</a>
+				<a href="">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+					<span class="mt-2">
+						coral.ml@gmail.com
+					</span>
+				</a>
+				<a href="">
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					<span class="mt-2">
+						Indonesia
+					</span>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- end info_section -->
+
+	<!-- footer section -->
+	<footer class="footer_section">
+		<div class="container">
+			<p>
+				Copyright &copy; <span id="displayYear"></span> All Rights Reserved
+			</p>
+		</div>
+	</footer>
+	<!-- footer section -->
+
+	<!-- jQery -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="js/bootstrap.js"></script>
+	<!-- custom js -->
+	<script src="js/custom.js"></script>
+	<!-- Google Map -->
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+				anchor.addEventListener('click', function (e) {
+					e.preventDefault();
+
+					document.querySelector(this.getAttribute('href')).scrollIntoView({
+						behavior: 'smooth'
+					});
+				});
+			});
+		});
+	</script>
+	<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	<script>
+		// Sample data for markers
+		var markerData = [
+			{ lat: -6.2088, lng: 106.8456, label: 'Jakarta', category: '2021' },
+			{ lat: -7.2575, lng: 112.7521, label: 'Surabaya', category: '2022' },
+			{ lat: -6.1750, lng: 106.8283, label: 'Bandung', category: '2023' },
+			{ lat: -6.2349, lng: 107.0009, label: 'Bogor', category: '2021' },
+			{ lat: -7.4719, lng: 110.2176, label: 'Yogyakarta', category: '2022' },
+			{ lat: -6.5946, lng: 106.7894, label: 'Tangerang', category: '2023' },
+			{ lat: -7.7828, lng: 110.3608, label: 'Solo', category: '2021' },
+			{ lat: -6.3691, lng: 106.8327, label: 'Depok', category: '2022' },
+			{ lat: -7.2906, lng: 112.7261, label: 'Malang', category: '2023' },
+			{ lat: -6.9667, lng: 110.4167, label: 'Semarang', category: '2021' },
+			// Add more markers as needed
+		];
+
+		// Initialize map with more zoom and centered on Indonesia
+		var map = L.map('map').setView([-5.5489, 110.0149], 6);
+
+		// Add base map layer (you can use other tile layers as well)
+		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+		// Define marker categories and colors
+		var categories = ['2021', '2022', '2023'];
+		var colors = ['red', 'blue', 'green'];
+
+		// Create legend
+		var legend = L.control({ position: 'topright' });
+		legend.onAdd = function (map) {
+			var div = L.DomUtil.create('div', 'legend');
+			for (var i = 0; i < categories.length; i++) {
+				div.innerHTML += '<i style="background:' + colors[i] + '"></i> ' + categories[i] + '<br>';
+			}
+			return div;
+		};
+		legend.addTo(map);
+
+		// Add markers to the map
+		for (var i = 0; i < markerData.length; i++) {
+			var marker = L.marker([markerData[i].lat, markerData[i].lng], { title: markerData[i].label });
+			marker.bindPopup('<strong>' + markerData[i].label + '</strong><br>Kategori: ' + markerData[i].category);
+			marker.addTo(map);
+		}
+
+	</script>
+	<!-- End Google Map -->
+</body>
+
+</html>

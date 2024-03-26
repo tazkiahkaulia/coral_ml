@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <link rel="icon" href="images/favicon.png" type="image/gif" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Coral ML</title>
+
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <style>
+        .flexRadio {
+            width: unset !important;
+            height: unset !important;
+        }
+    </style>
+
+</head>
+
+<body class="sub_page">
+
+    <div class="hero_area">
+        <!-- header section strats -->
+        <header class="header_section long_section px-0">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+                <a class="navbar-brand" href="index.html">
+                    <span>
+                        Coral ML
+                    </span>
+                </a>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class=""> </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+                        <ul class="navbar-nav  ">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Beranda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#pakar">Sistem Pakar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#klasifikasi">Klasifikasi Bleaching</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#tentang_kami">Tentang Kami</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- end header section -->
+    </div>
+
+    <!-- contact section -->
+    <section class="contact_section  long_section">
+        <div class="container">
+            <!-- <h2 style="text-align: center; text-transform: uppercase; font-weight: bold;">
+                Sistem Pakar
+            </h2> -->
+            <form method="POST" action="pakar_act.php">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="form_container">
+                            <div class="heading_container">
+                                <h2>
+                                    Sistem Pakar
+                                </h2>
+                            </div>
+                            <div class="form-group">
+                                <img src="images/pertanyaan-1.jpg" class="mb-3"
+                                    style="height: 250px; width: 377px; object-fit: cover;" />
+                                <label>1. Apakah warna terumbu karang cerah dan bervariasi?</label>
+                                <div class="form-check">
+                                    <input required class="form-check-input flexRadio" type="radio" name="nomor_1"
+                                        id="ya1" value="ya">
+                                    <label class="form-check-label" for="ya1">
+                                        Ya, warnanya cerah dan bervariasi.
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input flexRadio" type="radio" name="nomor_1" id="tidak1"
+                                        value="tidak">
+                                    <label class="form-check-label" for="tidak1">
+                                        Tidak, warnanya pucat dan kurang beragam.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group mt-5">
+                                <img src="images/pertanyaan-2.jpg" class="mb-3"
+                                    style="height: 250px; width: 377px; object-fit: cover;" />
+                                <label>2. Apakah terdapat tanda-tanda pemutihan terumbu karang?</label>
+                                <div class="form-check">
+                                    <input required class="form-check-input flexRadio" type="radio" name="nomor_2"
+                                        id="ya2" value="ya">
+                                    <label class="form-check-label" for="ya2">
+                                        Ya, terdapat tanda-tanda pemutihan seperti area pucat atau putih.
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input flexRadio" type="radio" name="nomor_2" id="tidak2"
+                                        value="tidak">
+                                    <label class="form-check-label" for="tidak2">
+                                        Tidak ada tanda-tanda pemutihan.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group mt-5">
+                                <img src="images/pertanyaan-3.jpg" class="mb-3"
+                                    style="height: 250px; width: 377px; object-fit: cover;" />
+                                <label>3. Bagaimana kondisi tutupan karang?</label>
+                                <div class="form-check">
+                                    <input required class="form-check-input flexRadio" type="radio" name="nomor_3"
+                                        id="ya3" value="ya">
+                                    <label class="form-check-label" for="ya3">
+                                        Tutupan karang masih baik, mencapai lebih dari 50%.
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input flexRadio" type="radio" name="nomor_3" id="tidak3"
+                                        value="tidak">
+                                    <label class="form-check-label" for="tidak3">
+                                        Tutupan karang menurun, hanya mencapai kurang dari 50%.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group mt-5">
+                                <img src="images/pertanyaan-4.jpg" class="mb-3"
+                                    style="height: 250px; width: 377px; object-fit: cover;" />
+                                <label>4. Apakah Anda melihat pertumbuhan karang yang sehat?</label>
+                                <div class="form-check">
+                                    <input required class="form-check-input flexRadio" type="radio" name="nomor_4"
+                                        id="ya4" value="ya">
+                                    <label class="form-check-label" for="ya4">
+                                        Ya, terumbu karang tumbuh dengan baik.
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input flexRadio" type="radio" name="nomor_4" id="tidak4"
+                                        value="tidak">
+                                    <label class="form-check-label" for="tidak4">
+                                        Tidak, ada tanda-tanda pertumbuhan yang terhambat atau terganggu.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group mt-5">
+                                <img src="images/pertanyaan-5.jpg" class="mb-3"
+                                    style="height: 250px; width: 377px; object-fit: cover;" />
+                                <label>5. Bagaimana kelimpahan ikan di sekitar terumbu karang?</label>
+                                <div class="form-check">
+                                    <input required class="form-check-input flexRadio" type="radio" name="nomor_5"
+                                        id="ya5" value="ya">
+                                    <label class="form-check-label" for="ya5">
+                                        Kelimpahan ikan tinggi, dengan berbagai jenis ikan.
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input flexRadio" type="radio" name="nomor_5" id="tidak5"
+                                        value="tidak">
+                                    <label class="form-check-label" for="tidak5">
+                                        Kelimpahan ikan rendah, hanya sedikit jenis ikan yang terlihat.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group mt-5">
+                                <img src="images/pertanyaan-6.jpg" class="mb-3"
+                                    style="height: 250px; width: 377px; object-fit: cover;" />
+                                <label>6. Apakah terdapat tanda-tanda kerusakan fisik oleh manusia, seperti jejak
+                                    pencemaran atau alat penangkapan ikan yang merusak?</label>
+                                <div class="form-check">
+                                    <input required class="form-check-input flexRadio" type="radio" name="nomor_6"
+                                        id="ya6" value="ya">
+                                    <label class="form-check-label" for="ya6">
+                                        Ya, terdapat jejak pencemaran atau tanda-tanda alat penangkapan ikan yang
+                                        merusak.
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input flexRadio" type="radio" name="nomor_6" id="tidak6"
+                                        value="tidak">
+                                    <label class="form-check-label" for="tidak6">
+                                        Tidak ada tanda-tanda kerusakan fisik oleh manusia.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="btn_box mt-5">
+                                <button style="width: 100%;">
+                                    Lihat Hasil
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- end contact section -->
+
+    <!-- info section -->
+    <section class="info_section long_section" style="margin-left: 0; margin-right: 0;">
+
+        <div class="container">
+            <div class="contact_nav">
+                <a href="">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span class="mt-2">
+                        0822 1234 5678
+                    </span>
+                </a>
+                <a href="">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span class="mt-2">
+                        coral.ml@gmail.com
+                    </span>
+                </a>
+                <a href="">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span class="mt-2">
+                        Indonesia
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- end info_section -->
+
+    <!-- footer section -->
+    <footer class="footer_section">
+        <div class="container">
+            <p>
+                Copyright &copy; <span id="displayYear"></span> All Rights Reserved
+            </p>
+        </div>
+    </footer>
+    <!-- footer section -->
+
+    <!-- jQery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <!-- Google Map -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+    <!-- End Google Map -->
+
+</body>
+
+</html>
